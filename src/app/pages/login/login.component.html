@@ -1,0 +1,46 @@
+<div class="login-body">
+    <div class="logo">
+        <img src="assets/layout/images/harmony-logo.png" alt="harmony-layout"/>
+        <span class="app-name">Kleebot</span>
+    </div>
+    <div class="login-panel shadow-2 border-round">
+        <img src="assets/layout/images/template/image-login-mobile.jpg" alt="harmony-layout" class="mobile"/>
+        <div class="left-part">
+            <form [formGroup]="formLogin" (ngSubmit)="onLogin()">
+                <span class="login-panel-header w-full">Bienvenido</span>
+                <span class="login-panel-subheader">Utilice el formulario para iniciar sesión en el sistema</span>
+                <div style="margin-top:32px">
+
+                        <div class="p-inputgroup mt-3 mb-6">
+                            <span class="p-inputgroup-addon">
+                                <i class="pi pi-user"></i>
+                            </span>
+                            <span class="p-float-label">
+                                <input type="text" id="username" pInputText formControlName="userName" autocomplete="off" required>
+                                <label for="username">Usuario</label>
+                            </span>
+                        </div>
+
+                        <div class="p-inputgroup mt-3 mb-6">
+                            <span class="p-inputgroup-addon">
+                                <i class="pi pi-lock"></i>
+                            </span>
+                            <span class="p-float-label">
+                                <input type="password" id="password" pInputText formControlName="password" autocomplete="off" feedback="false" required>
+                                <label for="password">Password</label>
+                            </span>
+                        </div>
+                </div>
+                <div class="w-full">
+                    <button type="submit" pButton pRipple label="Login" class="w-full"></button>
+                </div>
+            </form>
+        </div>
+        <div class="right-part">
+            <img src="assets/layout/images/template/image-login.png" alt="harmony-layout"/>
+        </div>
+    </div>
+</div>
+
+
+
