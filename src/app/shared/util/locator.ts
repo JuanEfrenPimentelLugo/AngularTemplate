@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
 export class Locator{
 
     // Login
-    public static authAutenticar = '/auth/autenticar';
+    //public static authAutenticar = '/auth/autenticar';
+    public static authAutenticar = '/Users/Authenticate';
     public static authValidaToken = '/auth/valida-token';
 
     // Reporte

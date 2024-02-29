@@ -75,7 +75,8 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                      "buildTarget": "harmony-ng:build"
+                      "buildTarget": "harmony-ng:build",
+                      "proxyConfig": "src/proxy.conf.json"
                     },
                     "configurations": {
                         "production": {

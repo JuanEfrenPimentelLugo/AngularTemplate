@@ -8,6 +8,6 @@ export const environment = {
     desactivarcors: false,
     servicios: {
         preurl: '',
-        urlApi: 'http://localhost:4043/api-kleebot'
+        urlApi: 'https://localhost:4200/api/v2'
     }
 };
